@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import 'bootstrap-icons/font/bootstrap-icons.css'; 
+
+:root {
+  --uni-red: #E62B4D;       
+  --uni-purple: #582CB2;   
+  --uni-dark: #1A1A1A;
+  --uni-gray-bg: #F4F6F9;
+  --uni-white: #FFFFFF;
+}
+
+body {
+  background-color: var(--uni-gray-bg);
+  font-family: 'Roboto', sans-serif;
+  color: var(--uni-dark);
+}
+
+.text-uni-red { color: var(--uni-red) !important; }
+.bg-uni-red { background-color: var(--uni-red) !important; }
+.btn-uni-red {
+  background-color: var(--uni-red);
+  color: white;
+  border-radius: 25px;
+  padding: 8px 24px;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.btn-uni-red:hover { background-color: #C91E3E; color: white; transform: translateY(-1px); }
+
+.btn-uni-purple {
+  background-color: var(--uni-purple);
+  color: white;
+  border: none;
+}
+.btn-uni-purple:hover { background-color: #45228A; color: white; }
+
+.sidebar-link {
+  color: #666;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  border-left: 4px solid transparent;
+  transition: all 0.2s;
+}
+.sidebar-link:hover, .sidebar-link.active {
+  background-color: #FFF0F2;
+  color: var(--uni-red);
+  border-left-color: var(--uni-red);
+}
+.sidebar-icon { margin-right: 12px; font-size: 1.2rem; }
+
+.card-custom {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  background: white;
+}
